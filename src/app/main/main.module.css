@@ -1,0 +1,91 @@
+.background {
+  position: relative;
+}
+
+.nav_bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #27183F;
+  color: #FBEAFF;
+  transition: width 0.2s linear;
+  box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+.nav_bar .app_logo {
+  display: flex;
+  text-align: center;
+  transition: all 0.5s ease;
+  border-left: 10px;
+  width: 200px;
+  height: 64px;
+  padding: 10px;
+  align-items: center;
+}
+.nav_bar .app_logo .logo_img {
+  width: 46px;
+  height: 46px;
+  filter: invert(86%) sepia(30%) saturate(218%) hue-rotate(108deg) brightness(106%) contrast(98%);
+}
+.nav_bar .app_logo h1 {
+  margin-left: 16px;
+  font-size: 20px;
+}
+.nav_bar .nav_button {
+  position: relative;
+  font-size: 16px;
+  display: table;
+  border-left: 10px;
+  width: 200px;
+  height: 64px;
+  padding: 10px;
+}
+.nav_bar .nav_button a {
+  color: #FBEAFF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav_bar .nav_button .icon {
+  display: flex;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.nav_bar .nav_button p {
+  margin-left: 16px;
+  font-size: 16px;
+}
+.nav_bar .log_out {
+  position: absolute;
+  bottom: 0;
+}
+
+.nav_bar:hover {
+  width: 200px;
+  transition: all 0.5s ease;
+}
+
+.main_page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 20svw 20svw 20svw 20svw 20svw;
+  grid-template-rows: 5svw 20svh 20svh 20svh 20svh 20svh;
+  background-color: #e2dde8;
+}
+
+.grid_child {
+  grid-row: 1/7;
+}/*# sourceMappingURL=main.module.css.map */

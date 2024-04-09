@@ -1,0 +1,100 @@
+$background-color: #27183F;
+$background-color2: #e2dde8;
+$accent-color: #FBEAFF;
+
+$nav-width: 200px;
+
+.background {
+    position: relative;
+}
+
+.nav_bar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 64px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $background-color;
+    color: $accent-color;
+    transition: width 0.2s linear;
+    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    .app_logo {
+        display: flex;
+        text-align: center;
+        transition: all 0.5s ease;
+        border-left: 10px;
+        width: $nav-width;
+        height: 64px;
+        padding: 10px;
+        align-items: center;
+        .logo_img {
+            width: 46px;
+            height: 46px;
+            filter: invert(86%) sepia(30%) saturate(218%) hue-rotate(108deg) brightness(106%) contrast(98%);
+        }
+        h1 {
+            margin-left: 16px;
+            font-size: 20px;
+        }
+    }
+    .nav_button {
+        position: relative;
+        font-size: 16px;
+        display: table;
+        border-left: 10px;
+        width: $nav-width;
+        height: 64px;
+        padding: 10px;
+        a {
+            color: $accent-color;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            display: flex;
+            position: relative;
+            width: 46px;
+            height: 46px;
+            justify-content: center;
+            align-items: center;
+            // top: 14px;
+            font-size: 24px;
+        }
+
+        p {
+            margin-left: 16px;
+            font-size: 16px;
+        }
+    }
+    .log_out {
+        position: absolute;
+        bottom: 0;
+    }
+}
+.nav_bar:hover {
+    width: $nav-width;
+    transition: all 0.5s ease;
+}
+
+
+.main_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 20svw 20svw 20svw 20svw 20svw;
+    grid-template-rows: 5svw 20svh 20svh 20svh 20svh 20svh;
+    background-color: $background-color2;
+}
+
+.grid_child{
+    grid-row: 1 / 7;
+}
